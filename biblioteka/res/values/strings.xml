@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">biblioteka</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_dodavanje_knjige">DodavanjeKnjige</string>
+    <string name="title_activity_detaljno">Detaljno</string>
+	<string-array name="statusi_niz">
+        <item>Neprocitana</item>
+        <item>Na citanju</item>
+        <item>Procitana</item>
+    </string-array>
+</resources>

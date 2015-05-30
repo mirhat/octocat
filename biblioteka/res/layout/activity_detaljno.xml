@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/naslovDetaljno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="36dp"
+        android:text="Naslov"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/autorDetaljno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/naslovDetaljno"
+        android:layout_below="@+id/naslovDetaljno"
+        android:layout_marginTop="20dp"
+        android:text="Autor" />
+
+    <TextView
+        android:id="@+id/datumDetaljno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/autorDetaljno"
+        android:layout_alignBottom="@+id/autorDetaljno"
+        android:layout_toRightOf="@+id/naslovDetaljno"
+        android:text="Datum" />
+
+    <TextView
+        android:id="@+id/straniceDetaljno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/autorDetaljno"
+        android:layout_below="@+id/autorDetaljno"
+        android:layout_marginTop="25dp"
+        android:text="Broj stranica" />
+
+    <Spinner
+        android:id="@+id/statusSpin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/straniceDetaljno"
+        android:layout_marginTop="18dp" />
+
+    <EditText
+        android:id="@+id/opisDetaljno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/straniceDetaljno"
+        android:layout_below="@+id/statusSpin"
+        android:layout_marginTop="30dp"
+        android:editable="false"
+        android:elegantTextHeight="true"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:inputType="textMultiLine" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>

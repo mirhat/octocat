@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ba.mirhat.android.DodavanjeKnjige" >
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/opisDetaljno"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Autor" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="ISBN"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText3"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Objavljeno: YYYY-dd-MM"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText4"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Broj stranica"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/ucitajBtn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText5"
+        android:layout_below="@+id/editText5"
+        android:text="Slika..." />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ucitajBtn"
+        android:layout_below="@+id/ucitajBtn"
+        android:ems="10"
+        android:hint="Opis"
+        android:inputType="textMultiLine" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp" >
+
+        <EditText
+            android:id="@+id/isbnPretraga"
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:hint="ISBN"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/skenirajBtn"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Skeniraj" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/pretragaBtn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:text="Pretraga" />
+
+    <EditText
+        android:id="@+id/opisDetaljno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_below="@+id/pretragaBtn"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:hint="Naziv" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/dodajBtn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText6"
+        android:layout_alignRight="@+id/editText6"
+        android:text="Dodaj knjigu" />
+
+</RelativeLayout>
